@@ -1,0 +1,29 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/navbar') -%>
+<link rel="stylesheet", href="css/recovery.css">
+<section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+            <div class="card rounded-3 text-black">
+                <form action="/auth/reset" method="post">
+                    <div class="row site-id">
+                        <img  src="img/blumoon.svg">
+                        <h1 class="text-center">Password Recovery</h1>
+                    </div>
+                    <div class="row">
+                        <input class="field" type="text", name="email", placeholder="email">
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary" type="submit">Confirm</button>
+                    </div>
+                        <center><p class="recovery"></p></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<%- include('../partials/footer') -%>
